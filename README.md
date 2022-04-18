@@ -1,27 +1,30 @@
-# MQTT-FIV_5AHET_Team-FGKP
+# FIV_5AHET_Fuchs_Progressive-Webapp_Einheitenrechner
 
-Erstellen Sie eine Anwendung die über MQTT Daten austauscht. 
-Gedankenmodell: Temperatursensor und Temperaturanzeige sowie ein Lichtschalter und Lichtanzeige
+Erstellen Sie eine Progressive Webapp welche die Funktion eines Einheitenrechner erfüllen soll. 
 
-## Deliverables
-* 1 Selbst geschriebene Windows PC-Anwendung (am PC verwendbar, GUI)
-  * Visualisierung der Tempratur und Steuerung des Lichts
-  * Programmiersprache: C#
+## Varianten:
 
-* 1 Selbst geschriebene Mac-Anwendung (am Mac Verwendbar, GUI)
-  * Visualisierung des Lichts und "Auslesen" (Zufallsgenerieren) der Temperatur
-  * Programmiersprache: Swift
+* plain HTML/CSS/JS
+* mit einem Javascript-Framework (z.B. vue.js) 
 
-* 1 Mobiltelefon-Demo
-  * Visualisierung der Temperatur sowie Steuerung des Lichts
-  * App: MQTTool (IOS)
+## Ansatz
 
-* Eigener konfigurierter/laufender MQTT Broker, im Netz erreichbar
-  * Raspberry PI
-  * Authentifizierung (User Accounts)
-  * TLS Verschlüsselung (versucht, nicht erfolgreich)
+https://github.com/htlweiz/tmpl-2021-22-fiv-5abhet-pwa 
 
-## Meta 
-* Team aus 4 Personen (Fuchs Michael, Glieder Jakob, Kaufmann Christian, Pöttler Marco)
-* Quellcode Verwaltung auf Github
-* Dokumentation in Form einer Präsentation der Lösung im Klassenverband (~10 Min.)
+https://htlweiz.github.io/tmpl-2021-22-fiv-5abhet-pwa/ 
+
+ 
+
+## Ressourcen: 
+
+https://www.w3schools.com/ 
+
+https://wiki.selfhtml.org/ 
+
+https://developer.mozilla.org/de/ 
+
+https://mobiforge.com/design-development/pwa-minimus-a-minimal-pwa-checklist 
+
+https://developer.mozilla.org/en-US/docs/Web/API/Cache/addAll 
+
+ 
