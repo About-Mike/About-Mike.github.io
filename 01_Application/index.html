@@ -9,19 +9,75 @@
 </head>
 
 <body>
-    <h1>Überschrift</h1>
-    <p id="meinAbsatz">Absatz</p>
-    <input id="area" type="text" />
+    <h1>Fuchs 5AHET Einheitenrechner</h1>
+    <hr width="450px">
+    <h2>Smoot</h2>
+    <p id="infoSmoot">Diese Einheit ist aus einem Spaß einer Studentenverbindung entstanden.
+    Benannt ist sie nach Oliver R. Smoot, der 1958 von seinen Verbindungsbrüdern
+    der Lambda Chi Alpha am MIT zur Vermessung der Harvard Bridge genutzt wurde.
+    Ein Smoot entspricht seiner Körpergroße, damals war er 1,7018 m groß. Die Länge der
+    Brücke wurde auf „364,4 Smoots plus/minus ein Ohr“ bestimmt. Auch Googles Dienste
+    (z.B. Earth) kennen Smoots.</p>
+
+    <p id="infoSmoot2">Mithilfe folgendem Dialogfenster können Werte der Einheit
+    Smoot in Meter umgewandelt werden und umgekehrt.</p>
+
+    <input id="area" type="text" /> Smoot
     <input onclick="calc()" type="submit" />
+
+    <input id="area2" type="text" /> Meter
+    <input onclick="calc2()" type="submit" />
+
+    <hr width="450px">
+    <h2>Potrzebie</h2>
+    <p id="infoPotrzebie">Ein Potrzebie entspricht der exakten Dicke des MAD Magazins #26 und
+    damit 2.263348517438173216473mm. Basierend auf einem Running Gag in den Anfangstagen des
+    MAD Magazins, wurde 1957 das Potrzebie von Emeritus Donald Knuth, einem zukünftigen 
+    Informatiker und Uni-Professor, erfunden. Die Einheit kann auch mit Google umgerechnet
+    werden.</p>
+
+    <p id="infoPotrzebie2">Mithilfe folgendem Dialogfenster können Werte der Einheit
+    Potrzebie in Millimeter umgewandelt werden und umgekehrt.</p>
+
+    <input id="area3" type="text" /> Potrzebie
+    <input onclick="calc3()" type="submit" />
+
+    <input id="area4" type="text" /> Millimeter
+    <input onclick="calc4()" type="submit" />
+
+    <hr width="450px">
 </body>
 <script>
-    function calc() {
-        ausgabe = document.getElementById("meinAbsatz")
+    function calc()
+    {
+        ausgabe = document.getElementById("area2")
         input = document.getElementById("area")
-        ausgabe.innerText = input.value * 12
+        ausgabe.value = input.value * 1.7018
     }
 
-    if('serviceWorker' in navigator) {
+    function calc2()
+    {
+        ausgabe = document.getElementById("area")
+        input = document.getElementById("area2")
+        ausgabe.value = input.value / 1.7018
+    }
+
+    function calc3()
+    {
+        ausgabe = document.getElementById("area4")
+        input = document.getElementById("area3")
+        ausgabe.value = input.value * 2.263348517438173216473
+    }
+
+    function calc4()
+    {
+        ausgabe = document.getElementById("area3")
+        input = document.getElementById("area4")
+        ausgabe.value = input.value / 2.263348517438173216473
+    }
+
+    if('serviceWorker' in navigator)
+    {
       navigator.serviceWorker.register('./sw.js')
         .then(function() { console.log("Service worker registered"); });
     }
