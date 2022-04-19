@@ -4,4 +4,6 @@ h2 { color: #111; font-family: 'Open Sans', sans-serif; font-weight: 300; text-a
 
 p { color: #685206; font-family: 'Helvetica Neue', sans-serif; text-align: justify; text-justify: inter-word; }
 
-text { color: #685206; font-family: 'Helvetica Neue', sans-serif; text-align: justify; text-justify: inter-word; }
+.btnmrg {
+    margin-left: 10%;
+}
